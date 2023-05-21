@@ -1,7 +1,3 @@
-Run the following command to install the necessary packages:
-
-pip install subprocess
-
 Please know this project is in beta and all issues can be reported to our discord server: https://discord.gg/63vJtn3y
 
 v1.0 beta
