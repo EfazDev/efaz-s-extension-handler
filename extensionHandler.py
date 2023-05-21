@@ -2,6 +2,7 @@
 import os
 import subprocess
 import platform
+import time
 import json
 import sys
 
@@ -14,7 +15,7 @@ elif LocalMachineOS == "win32" or LocalMachineOS == "win64" or LocalMachineOS ==
     os.system("cls")
 print("Welcome to Efaz's Extension Handler!")
 print("")
-print("Loading settings.json...")
+print("Loading Extension Requirments...")
 print("")
 directory = os.path.dirname(os.path.realpath(__file__))
 
@@ -41,6 +42,75 @@ if pythonVersion.major >= 3:
 else:
     print("This version of python is not available incase of errors of the latest packages. Please update to python v3.0.0 or up")
     sys.exit()
+print("")
+
+# Checking modules installation
+
+print("Testing for required modules...")
+
+try:
+    import discord
+    print("Required module (discord) for mewt sniper is installed")
+except ModuleNotFoundError:
+    print("Required module (discord) for mewt sniper is not installed, installing in 2 seconds.")
+    time.sleep(2)
+    if LocalMachineOS == "Windows" or LocalMachineOS == "win32" or LocalMachineOS == "win64":
+        os.system("pip install discord.py")
+    else:
+        os.system('pip3 install discord.py')
+        os.system("pip install discord.py")
+
+try:
+    import requests
+    print("Required module (requests) for mewt sniper is installed")
+except ModuleNotFoundError:
+    print("Required module (requests) for mewt sniper is not installed, installing in 2 seconds.")
+    time.sleep(2)
+    if LocalMachineOS == "Windows" or LocalMachineOS == "win32" or LocalMachineOS == "win64":
+        os.system("pip install requests")
+    else:
+        os.system('pip3 install requests')
+        os.system("pip install requests")
+
+try:
+    import colorama
+    print("Required module (colorama) for mewt sniper is installed")
+except ModuleNotFoundError:
+    print("Required module (colorama) for mewt sniper is not installed, installing in 2 seconds.")
+    time.sleep(2)
+    if LocalMachineOS == "Windows" or LocalMachineOS == "win32" or LocalMachineOS == "win64":
+        os.system("pip install colorama")
+    else:
+        os.system('pip3 install colorama')
+        os.system("pip install colorama")
+
+try:
+    import socketio
+    print("Required module (socketio) for mewt sniper is installed")
+except ModuleNotFoundError:
+    print("Required module (socketio) for mewt sniper is not installed, installing in 2 seconds.")
+    time.sleep(2)
+    if LocalMachineOS == "Windows" or LocalMachineOS == "win32" or LocalMachineOS == "win64":
+        os.system('pip install python-socketio[client]')
+    else:
+        os.system('pip3 install python-socketio[client]')
+        os.system('pip install python-socketio[client]')
+
+try:
+    import rgbprint
+    print("Required module (rgbprint) for mewt sniper is installed")
+except ModuleNotFoundError:
+    print("Required module (rgbprint) for mewt sniper is not installed, installing in 2 seconds.")
+    time.sleep(2)
+    if LocalMachineOS == "Windows" or LocalMachineOS == "win32" or LocalMachineOS == "win64":
+        os.system('pip install rgbprint')
+    else:
+        os.system('pip3 install rgbprint')
+        os.system('pip install rgbprint')
+    
+print("Finished checking for module installation")
+print("Loading Extension Settings...")
+
 print("")
 
 if LocalMachineOS == "Windows" or LocalMachineOS == "win32" or LocalMachineOS == "win64":
