@@ -134,7 +134,7 @@ else:
                         print("Running " + x["fileName"] + " aka " + x["extensionName"] + " using language: " + y[1])
             if openMewt == True:
                 print("Ran all extensions, opening mewt sniper")
-                subprocess.Popen(['python', directory + "/main.py"])
+                subprocess.Popen(['python3', directory + "/main.py"])
             else:
                 print("Ran all extensions, and mewt has not been opened.")
         elif order == "FileName":
@@ -148,7 +148,7 @@ else:
                         print("Running " + x["fileName"] + " aka " + x["extensionName"] + " using language: " + y[1])
             if openMewt == True:
                 print("Ran all extensions, opening mewt sniper")
-                subprocess.Popen(['python', directory + "/main.py"])
+                subprocess.Popen(['python3', directory + "/main.py"])
             else:
                 print("Ran all extensions, and mewt has not been opened.")
         elif order == "ExtensionName":
@@ -162,7 +162,7 @@ else:
                         print("Running " + x["fileName"] + " aka " + x["extensionName"] + " using language: " + y[1])
             if openMewt == True:
                 print("Ran all extensions, opening mewt sniper")
-                subprocess.Popen(['python', directory + "/main.py"])
+                subprocess.Popen(['python3', directory + "/main.py"])
             else:
                 print("Ran all extensions, and mewt has not been opened.")
         else:
@@ -177,7 +177,7 @@ else:
             if openMewt == True:
                 print("")
                 print("Ran all extensions, opening mewt sniper")
-                subprocess.Popen(['python', directory + "/main.py"])
+                subprocess.Popen(['python3', directory + "/main.py"])
             else:
                 print("")
                 print("Ran all extensions, and mewt has not been opened.")
