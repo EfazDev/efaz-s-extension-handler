@@ -1,4 +1,4 @@
-Run the following command to install the nessary packages:
+Run the following command to install the necessary packages:
 
 pip install subprocess
 
