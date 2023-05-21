@@ -20,7 +20,8 @@ directory = os.path.dirname(os.path.realpath(__file__))
 
 LocalAvailableProgramLanguages = [
     [".py", "python"],
-    [".java", "java"]
+    [".java", "java"],
+    [".lua", "lua"]
 ]
 if LocalMachineOS == "Darwin":
     print("Detected Local Machine OS: " + LocalMachineOS + " (Apple Unix OS)")
